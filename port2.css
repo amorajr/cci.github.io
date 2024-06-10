@@ -1,0 +1,51 @@
+.port2{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+  padding:10px;
+  grid-gap:35px;
+}
+/* keeps 3x3 grid layout */
+@media (min-width: 17in) {
+  .port2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, calc(100%/3 - 35px)));
+  }
+}
+
+.categoryImages img{
+  width:100%;
+  border-radius: 5px;
+}
+
+.description{
+  font-size:2vw;
+  text-align:center;
+  font-family:Copperplate Gothic;
+  color:rgb(197, 197, 197);
+  font-weight: lighter;
+  margin-top:15px;
+}
+/* responsive text */
+@media (max-width: 900px) {
+  .description {
+    font-size: 4vw;
+  }
+
+}
+
+.categoryImages{ 
+  transition: transform .2s;
+
+}
+
+.categoryImages:active{
+  transform: scale(1.1);
+  transition: transform .2s;
+
+}
+
+.categoryImages:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+
+}
+

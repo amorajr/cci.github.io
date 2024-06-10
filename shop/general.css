@@ -1,0 +1,32 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+}
+body{
+  
+  height: 5000px;
+  background-color: rgba(0, 0, 0, 0.945);
+  
+}
+*{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button{
+  cursor:pointer;
+}
+
+a{
+  cursor:pointer;
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+}
+
+

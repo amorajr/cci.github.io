@@ -1,0 +1,105 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 1rem;
+}
+body{
+  animation: slideIn 2s ;
+  margin: 0;
+  height: 5000px;
+  background-color: rgba(0, 0, 0, 0.945);
+  padding:0;
+  
+}
+
+@keyframes slideIn {
+  0% {opacity: 0;}
+  50% {opacity: 5;}
+  100% {opacity: 10;}
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button{
+  cursor:pointer;
+}
+
+a{
+  cursor:pointer;
+  
+  text-decoration:none;
+}
+
+.vertical-container{
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  padding:0;
+}
+
+.home > ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+/* About section */
+
+.abouther {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  
+  padding: 10px;
+  grid-gap: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+}
+
+.aboutphoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.aboutimage {
+  
+  padding-left:100px;
+}
+
+.about-photo-img {
+  border-radius: 5px;
+  object-fit: cover;
+  
+  width:60%;
+}
+
+/*keep text alligned to image*/
+@media (max-width: 1024px) {
+  .about-photo-img {
+    width:45vw;
+  }
+}
+
+.aboutdescription {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h3 {
+  
+  text-align: left;
+  font-family: Courier New;
+  color: rgb(197, 197, 197);
+  line-height: 1.6em;
+  font-size: 1.2vw;
+}
+
+
+
+
+

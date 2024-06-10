@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Curmhi Chettiar Imagery Shop</title>
+
+  <link rel="website icon" type="png" href="pictures/logo.png">
+
+  <link rel="stylesheet" href="shop/general.css">
+  <link rel="stylesheet" href="shop/head.css">
+  <link rel='stylesheet' href="shop/body.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="shop/block.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+
+</head>
+<body>
+  <div class="verticalContainer">
+
+    <div class="navbar">
+      <nav>
+        <ul class="nav-list">
+          <li><a onclick="location.href='main.html'">HOME</a></li>
+          <li ><a onclick="location.href='main.html#About'">ABOUT</a></li>
+          <li ><a onclick="location.href='main.html#Portfolio'">PORTFOLIO</a></li>
+          <li><a onclick="location.href='shop.html'">SHOP</a></li>
+          <li><a href="#Contact">CONTACT</a></li>
+        </ul>
+        <ul class="sidebar">
+          <li class="hamburger-menu1" onclick="hideSidebar()"><a>&#10006;</a></li>
+          <li class="sidebar-menu"><a onclick="location.href='main.html'">HOME</a></li>
+          <li class="sidebar-menu"><a onclick="location.href='main.html#About'">ABOUT</a></li>
+          <li class="sidebar-menu"><a onclick="location.href='main.html#Portfolio'">PORTFOLIO</a></li>
+          <li class="sidebar-menu"><a onclick="location.href='shop.html'">SHOP</a></li>
+          <li class="sidebar-menu"><a href="#Contact">CONTACT</a></li>
+        </ul>        
+        <li class="hamburger-menu" onclick="showSidebar()"><a>&#9776;</a></li>    
+      </nav>
+    </div>
+
+
+
+    <div id="individual">
+
+      <div class="port1">
+        <div>
+          <div class="headline">
+            <h1>INDIVIDUAL</h1>
+          </div>
+          <h2>
+            Explore our gallery for individual portrait shots that capture the real you, from professional headshots to personal memories.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="port2">
+      <div class="details-container">
+
+        <a onclick="showMenu(0)">
+          <div class="block1" data-aos="zoom-out-up">
+            <div class="categoryImages">
+              <img src="pictures/individual.jpg" alt="Individual">
+            </div>
+            <div class="description">Portraits</div>
+          </div>
+        </a>
+        <div class="details">
+          <button class="close-button" onclick="hideMenu(0)">&#10006;</button>
+          <h3>R800<br>
+            <br>Formal | Casual | Traditional | Graduation<br>
+            <br>In studio / Outdoor<br>
+            <br>1 person max<br>
+            <br>30 min session<br>
+            <br>10 Digitally edited images<br>
+            <br>Downloadable online gallery<br>
+            <br>NO Decor included<br>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="couples">
+
+      <div class="port1">
+        <div>
+          <div class="headline">
+            <h1>COUPLES</h1>
+          </div>
+          <h2>Dive into our couples' collection, where love sparks, laughter flows, and every click tells your story.</h2>
+        </div>
+      </div>
+
+      <div class="image-slider" id="carousel1">
+        <section id="mirror">
+            <div class="Carousel-slider">
+                <!-- Background Images div (adapted for images) -->
+                <div class="slider-item pic1"><img src="pictures/slideshow2.jpg" alt="Individual"></div>
+                <div class="slider-item pic2"><img src="pictures/slideshow1.jpg" alt="Individual"></div>
+                <div class="slider-item pic3"><img src="pictures/slideshow14.jpg" alt="Individual"></div>
+                <div class="slider-item pic4"><img src="pictures/familypr1.jpg" alt="Individual"></div>
+                <div class="slider-item pic5"><img src="pictures/familyst1.jpg" alt="Individual"></div>
+                <div class="slider-item pic6"><img src="pictures/Familybc1.jpg" alt="Individual"></div>
+                
+            </div>
+        </section>
+      </div>
+
+      <div class="port2">
+        <div class="details-container">
+
+          <a onclick="showMenu(1)">
+            <div class="block" data-aos="zoom-out-up">
+              <div class="categoryImages">
+                <img src="pictures/couplesilver.jpg" alt="Individual">
+              </div>
+              <div class="description">Silver Collection</div>
+            </div>
+          </a>
+          <div class="details">
+            <button class="close-button" onclick="hideMenu(1)">&#10006;</button>
+            <h3>R980<br>
+              <br>In studio / Outdoor<br>
+              <br>2 people max<br>
+              <br>30 min session<br>
+              <br>10 Digitally edited images<br>
+              <br>Downloadable online gallery<br>
+              <br>NO Decor included<br>
+            </h3>
+          </div>
+        </div>
+    
+        <div class="details-container">  
+          <a onclick="showMenu(2)">
+            <div class="block" data-aos="zoom-out-up">
+              <div class="categoryImages">
+                <img src="pictures/couplegold.jpg" alt="Individual">
+              </div>
+              <div class="description">Gold Collection</div>
+            </div>
+          </a>
+          <div class="details">
+            <button class="close-button" onclick="hideMenu(2)">&#10006;</button>
+            <h3>R1200<br>
+              <br>In studio / Outdoor<br>
+              <br>2 people max<br>
+              <br>1 Hour session<br>
+              <br>1 x Outfit change<br>
+              <br>1 Hour session<br>
+              <br>15 Digitally edited images<br>
+              <br>Downloadable online gallery<br>
+              <br>NO Decor included<br>
+            </h3>
+          </div>
+        </div>
+      </div>
+           
+    </div>
+
+     <div id="family">
+
+        <div class="port1">
+          <div>
+            <div class="headline">
+              <h1>FAMILY</h1>
+            </div>
+            <h2>As your family story unfolds through the years, we are here every step of the way to capture these precious moments.</h2>
+          </div>
+        </div>
+
+        <div class="image-slider" id="carousel2">
+          <section id="mirror">
+              <div class="Carousel-slider">
+                  <!-- Background Images div (adapted for images) -->
+                  <div class="slider-item pic1"><img src="pictures/slideshow2.jpg" alt="Individual"></div>
+                  <div class="slider-item pic2"><img src="pictures/slideshow1.jpg" alt="Individual"></div>
+                  <div class="slider-item pic3"><img src="pictures/slideshow14.jpg" alt="Individual"></div>
+                  <div class="slider-item pic4"><img src="pictures/familypr1.jpg" alt="Individual"></div>
+                  <div class="slider-item pic5"><img src="pictures/familyst1.jpg" alt="Individual"></div>
+                  <div class="slider-item pic6"><img src="pictures/Familybc1.jpg" alt="Individual"></div>
+                  
+              </div>
+          </section>
+        </div>
+
+        <div class="port2">
+          
+          <div class="details-container">
+  
+            <a onclick="showMenu(3)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/familybasic.jpg" alt="Individual">
+                </div>
+                <div class="description">Basic Collection</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(3)">&#10006;</button>
+              <h3>R1200<br>
+                <br>In studio / Outdoor<br>
+                <br>Up to 4 people max <br>
+                <br>30 min session<br>
+                <br>10 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+              </h3>
+            </div>
+          </div>
+
+          <div class="details-container">
+  
+            <a onclick="showMenu(4)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/familystandard.jpg" alt="Individual">
+                </div>
+                <div class="description">Standard Collection</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(4)">&#10006;</button>
+              <h3>R1800<br>
+                <br>In studio / Outdoor<br>
+                <br>Up to 5 people max <br>
+                <br>1 hour session<br>
+                <br>15 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+              </h3>
+            </div>
+          </div>
+
+          <div class="details-container">
+  
+            <a onclick="showMenu(5)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/familypremium.jpg" alt="Individual">
+                </div>
+                <div class="description">Premium Collection</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(5)">&#10006;</button>
+              <h3>R2400<br>
+                <br>In studio / Outdoor<br>
+                <br>Up to 8 people max <br>
+                <br>1 hour session<br>
+                <br>20 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+                <br>Additional persons charged @ R50pp therafter<br>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="birthday">
+
+        <div class="port1">
+          <div>
+            <div class="headline">
+              <h1>Milestone Birthday's</h1>
+            </div>
+            <h2>We cherish photographing children, creating a safe, fun experience to capture their joy before they grow up too fast.</h2>
+          </div>
+        </div>
+
+        <div class="port2">
+          
+          <div class="details-container">
+  
+            <a onclick="showMenu(6)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/justaslice.jpg" alt="Individual">
+                </div>
+                <div class="description">Just a Slice</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(6)">&#10006;</button>
+              <h3>R800<br>
+                <br>In studio<br>
+                <br>1 - 2 people max <br>
+                <br>30 min session<br>
+                <br>10 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+                <br>NO Decor included<br>
+                <br>You are welcome to bring your own decor<br>
+                <br>NO cake allowed<br>
+              </h3>
+            </div>
+          </div>
+
+          <div class="details-container">
+  
+            <a onclick="showMenu(7)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/slideshow14.jpg" alt="Individual">
+                </div>
+                <div class="description">HipHipHooRaay</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(7)">&#10006;</button>
+              <h3>R2000<br>
+                <br>In studio<br>
+                <br>1 - 4 people max <br>
+                <br>30 min session<br>
+                <br>10 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+                <br>Simple Decor included<br>
+                <br>Large milestone number balloons | Puffs | Fringe Backdrop<br>
+                <br>Optional Champagne/ Cake at additional cost<br>
+            </div>
+          </div>
+
+          <div class="details-container">
+  
+            <a onclick="showMenu(8)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/thewholecake.jpg" alt="Individual">
+                </div>
+                <div class="description">The WHOLE Cake</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(8)">&#10006;</button>
+              <h3>R2800<br>
+                <br>In studio<br>
+                <br>1 - 4 people max <br>
+                <br>1 - 2 hour session<br>
+                <br>20 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+                <br>Full custom theme Decor included<br>
+                <br>Splash session<br>
+                <br>Optional Cake and outfit add-on provided at additional cost<br>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div id="kids">
+
+        <div class="port1">
+          <div>
+            <div class="headline">
+              <h1>Kids Portraits</h1>
+            </div>
+            <h2>We're all about kids' portraits, making it fun and safe to capture their awesome moments with us!</h2>
+          </div>
+        </div>
+
+        <div class="port2">
+          
+          <div class="details-container">
+  
+            <a onclick="showMenu(9)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/koolkids.jpg" alt="Individual">
+                </div>
+                <div class="description">Kool Kids</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(9)">&#10006;</button>
+              <h3>R780<br>
+                <br>In studio/ Outdoor<br>
+                <br>1 child only<br>
+                <br>30 min session<br>
+                <br>Of your child playing/ Having fun<br>
+                <br>10 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+                <br>NO Decor included<br>
+              </h3>
+            </div>
+          </div>
+
+          <div class="details-container">
+  
+            <a onclick="showMenu(10)">
+              <div class="block" data-aos="zoom-out-up">
+                <div class="categoryImages">
+                  <img src="pictures/kidsmommy.jpg" alt="Individual">
+                </div>
+                <div class="description">Mommy / Daddy & Me</div>
+              </div>
+            </a>
+            <div class="details">
+              <button class="close-button" onclick="hideMenu(10)">&#10006;</button> 
+              <h3>R980<br>
+                <br>In studio/ Outdoor<br>
+                <br>1 Parent & 1 child<br>
+                <br>30 min session<br>
+                <br>10 Digitally edited images<br>
+                <br>Downloadable online gallery<br>
+                <br>NO Decor included<br>
+              </h3>
+            </div>
+          </div>
+      
+      </div>
+
+      <div id="Maternity">
+
+        <div class="port1">
+          <div>
+            <div class="headline">
+              <h1>Maternity</h1>
+            </div>
+            <h2>
+              Join us for maternity photos that capture the magic of this special time, where it's all about comfort and joy!</h2>
+          </div>
+        </div>
+      </div>
+  
+      <div class="port2">
+        <div class="details-container">
+  
+          <a onclick="showMenu(11)">
+            <div class="block1" data-aos="zoom-out-up">
+              <div class="categoryImages">
+                <img src="pictures/maternity1.jpg" alt="Individual">
+              </div>
+              <div class="description">Mommy to be</div>
+            </div>
+          </a>
+          <div class="details">
+            <button class="close-button" onclick="hideMenu(11)">&#10006;</button>
+            <h3>R2600<br>
+              <br>In studio<br>
+              <br>Includes your spouse and your children<br>
+              <br>1 - 2 Hour Session<br>
+              <br>15 Digitally edited images<br>
+              <br>Downloadable online gallery<br>
+              <br>Maternity dress of your choice included in photograph<br>
+              <br>Optional Make-up & hair can be booked at additional charge on request<br>
+            </h3>
+          </div>
+        </div>
+      </div> 
+
+    </div> 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+
+
+
+
+  </div>
+</body>
+</html>

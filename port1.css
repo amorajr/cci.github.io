@@ -1,0 +1,61 @@
+.maternity{
+  background-image: url('background.jpg');
+  background-color: pink;
+}
+
+.port1{
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 90% cover 50%;
+  margin-bottom:40px;
+  padding-top: 15px;
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity:1;
+  }
+  0%{
+    opacity: 0;
+  }
+}
+.headline{
+  background: linear-gradient(#cd7f32,#ffffffa8, #cd7f32);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  
+}
+
+h1{
+  font-size:4.5vw;
+  font-family:Calisto MT;
+  text-align:center;
+  color:transparent;
+  text-shadow: 0 0 0 0 #33333333;
+}
+
+
+h2{
+  font-size:2.5vw;
+  text-align:center;
+  font-family:Copperplate Gothic;
+  color:rgb(197, 197, 197);
+  font-weight: lighter;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 5.9vw;
+  }
+
+  h2 {
+    font-size: 4.5vw;
+  }
+}
+
+
